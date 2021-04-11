@@ -19,8 +19,9 @@ let game = function() {
       } else if (number < conceivedNumber) {
         alert('Загаданное число больше');
         guessNumber();
-      } else if (number === conceivedNumber) {
-        return alert('Поздравляю, Вы угадали!');
+      } else {
+        alert('Поздравляю, Вы угадали!');
+        return;
       } 
     } else if (number === null) {
       alert('Игра окончена');
